@@ -142,7 +142,8 @@ document.addEventListener('DOMContentLoaded', () => { // Setting up to make sure
         It then creates a new list of students to display based on that search and in real time
     ***/
     input.addEventListener('input', (event) => {
-        const name = event.srcElement.value;                // Saves value typed into the input
+        const prename = event.srcElement.value;             // Saves value typed into the input
+        const name = prename.toLowerCase();
         var resultingStudents = [];                         // Prepares variable for the new student list
 
         const removalPagination = document.querySelector('.pagination');
