@@ -4,6 +4,11 @@ body{
   color: #222;
 }
 
+/* New way of prioritization: https://stackoverflow.com/questions/20721248/how-can-i-override-bootstrap-css-styles */
+#bootstrap-overrides { /* 100+1=101 priority score, yay! */
+  background-color: #e1f1f6;
+}
+
 .page{
   margin: 50px auto;
   width: 70%;
